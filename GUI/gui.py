@@ -43,7 +43,7 @@ def salvar_senha(site, email, senha):
     senha_dicionario = {site: {'email': email, 'senha': senha }}
     print(senha_dicionario)
 
-    with open(file='senha.json', mode='w', encoding='UTF-8') as file:
+    with open(file='senha.json', mode='w', encoding='UTF-8') as file: 
         json.dump(senha_dicionario, file, indent=4)
     messagebox.showinfo(message='Senha salva, Parabens')
 
